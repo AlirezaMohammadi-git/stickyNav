@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header > img {
+  width: 100%;
+  background-image: url("img/pexels-davidriano-975771.jpg");
+  background-color: black;
+}
+
+.header::after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  position: absolute;
+  content: "A story about getting lost.";
+  max-width: 90%;
+  text-align: center;
+  font-size: 8rem;
+  font-weight: 900;
+  color: black;
+}
+
+ul {
+  list-style: none;
+}
+
+.navbar {
+  display: flex;
+  width: 100%;
+  height: 5rem;
+  justify-content: space-evenly;
+  align-items: stretch;
+  background-color: black;
+  margin-top: 0px;
+}
+
+.navbar li {
+  align-self: center;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  transition: all 0.8s;
+  font-size: 1.5rem;
+  font-weight: 800;
+  cursor: pointer;
+  flex: 1;
+}
+
+.navbar li:hover {
+  background-color: red;
+}
+
+.navbar.active {
+  position: fixed;
+  top: 0px;
+}
+
+.logo {
+  transition: all 1s;
+  max-width: 0px;
+}
+
+.logo.active {
+  font-size: 2rem;
+  font-weight: 900;
+  max-width: 8rem;
+  padding: 0px 5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  color: black;
+  z-index: 2;
+}
+
+.main {
+  background-color: gray;
+  font-size: 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main p {
+  color: black;
+  text-align: justify;
+}
+
+.main > div {
+  margin-top: 5rem;
+  width: 50%;
+  padding: 3rem 6rem;
+  background-color: whitesmoke;
+  margin-bottom: 8rem;
+}
